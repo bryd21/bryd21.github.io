@@ -1,142 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ModuTennis</title>
-  <meta name="description" content="ModuTennis — modular tennis training, drills, and insights." />
-  <meta name="theme-color" content="#16a34a" />
-  <link rel="icon" href="favicon.ico" />
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modu Tennis - Premier Tennis Training Program</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <a class="skip" href="#main">Skip to content</a>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">MODU TENNIS</div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="locations.html">Locations</a></li>
+            </ul>
+        </div>
+    </nav>
 
-  <header class="site-header">
-    <div class="container nav">
-      <a class="brand" href="/">ModuTennis</a>
-
-      <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Menu">
-        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-      </button>
-
-      <nav id="menu" class="menu" aria-label="Primary">
-        <a href="#features">Features</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#contact" class="btn btn--ghost">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <main id="main">
+    <!-- Hero Section -->
     <section class="hero">
-      <div class="container hero__grid">
-        <div class="hero__text">
-          <h1>Train smarter with ModuTennis</h1>
-          <p>Drills, progress tracking, and modular plans made for players and coaches—optimized for mobile.</p>
-          <div class="cta">
-            <a href="#features" class="btn">Get started</a>
-            <a href="#contact" class="btn btn--ghost">Talk to us</a>
-          </div>
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1>Play with us for Excellence</h1>
+                <p>Professional tennis training for all ages and skill levels</p>
+                <a href="about.html" class="cta-button">Learn More</a>
+            </div>
         </div>
-
-        <!-- Replace hero.jpg with your own image in /images -->
-        <picture>
-          <!-- Example source for high‑res displays -->
-          <source srcset="images/hero@2x.jpg 2x, images/hero.jpg 1x" type="image/jpeg">
-          <img class="hero__img" src="images/hero.jpg" alt="Tennis player practicing drills" loading="eager" decoding="async">
-        </picture>
-      </div>
     </section>
 
-    <section id="features" class="section">
-      <div class="container">
-        <h2>Why ModuTennis</h2>
-        <div class="grid-3">
-          <article class="card">
-            <h3>Modular plans</h3>
-            <p>Stack micro‑sessions that fit into busy schedules.</p>
-          </article>
-          <article class="card">
-            <h3>Realtime tracking</h3>
-            <p>Measure consistency and pace with simple inputs.</p>
-          </article>
-          <article class="card">
-            <h3>Coach tools</h3>
-            <p>Share plans, annotate drills, and review progress.</p>
-          </article>
+    <!-- Programs Section -->
+    <section class="programs">
+        <div class="container">
+            <h2>Our Programs</h2>
+            <div class="program-grid">
+                <div class="program-card">
+                    <div class="program-image">
+                        <img src="https://images.unsplash.com/photo-1554068865-24cecd4e34b8?w=800" alt="Junior Programs">
+                    </div>
+                    <h3>Junior Programs</h3>
+                    <p>Comprehensive training for young players of all levels, from beginners to competitive tournament players.</p>
+                </div>
+                <div class="program-card">
+                    <div class="program-image">
+                        <img src="https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?w=800" alt="Adult Programs">
+                    </div>
+                    <h3>Adult Programs</h3>
+                    <p>Group lessons and private coaching designed for adult players looking to improve their game.</p>
+                </div>
+                <div class="program-card">
+                    <div class="program-image">
+                        <img src="https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?w=800" alt="Private Coaching">
+                    </div>
+                    <h3>Private Coaching</h3>
+                    <p>One-on-one sessions tailored to your specific goals and skill development needs.</p>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-    <section id="pricing" class="section alt">
-      <div class="container">
-        <h2>Simple pricing</h2>
-        <div class="pricing">
-          <div class="price-card">
-            <h3>Starter</h3>
-            <p class="price">$0</p>
-            <ul>
-              <li>Core drills</li>
-              <li>Progress charts</li>
-              <li>Email support</li>
-            </ul>
-            <a href="#contact" class="btn">Choose Starter</a>
-          </div>
-          <div class="price-card highlight">
-            <h3>Pro</h3>
-            <p class="price">$9/mo</p>
-            <ul>
-              <li>Coach tools</li>
-              <li>Custom plans</li>
-              <li>Priority support</li>
-            </ul>
-            <a href="#contact" class="btn">Choose Pro</a>
-          </div>
+    <!-- About Preview Section -->
+    <section class="about-preview">
+        <div class="container">
+            <div class="about-content">
+                <h2>Tennis Is For Everyone!</h2>
+                <p>At Modu Tennis, we believe that with the right practice and guidance, all players can continue improving their game infinitely. Our programs are designed to help players of all levels reach their full potential.</p>
+                <a href="about.html" class="btn-secondary">Meet Our Founder</a>
+            </div>
         </div>
-      </div>
     </section>
 
-    <section id="contact" class="section">
-      <div class="container">
-        <h2>Contact</h2>
-        <!-- Static form example using Formspree (replace YOUR_ID) -->
-        <form action="https://formspree.io/f/YOUR_ID" method="POST" class="form">
-          <label>
-            Name
-            <input name="name" autocomplete="name" required>
-          </label>
-          <label>
-            Email
-            <input type="email" name="email" autocomplete="email" required>
-          </label>
-          <label>
-            Message
-            <textarea name="message" rows="4" required></textarea>
-          </label>
-          <button class="btn" type="submit">Send</button>
-        </form>
-      </div>
-    </section>
-  </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MODU TENNIS</h3>
+                    <p>Premier tennis training program in New Jersey</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="locations.html">Locations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Tenafly Racquet Club</p>
+                    <p>195 County Rd, Tenafly, NJ 07670</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Modu Tennis. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> ModuTennis • <a href="https://github.com/bryd21">GitHub</a></p>
-    </div>
-  </footer>
-
-  <script>
-    // Mobile menu toggle (accessibility-friendly)
-    const toggle = document.querySelector('.nav-toggle');
-    const menu = document.getElementById('menu');
-    toggle?.addEventListener('click', () => {
-      const open = toggle.getAttribute('aria-expanded') === 'true';
-      toggle.setAttribute('aria-expanded', String(!open));
-      menu.classList.toggle('open', !open);
-      document.body.classList.toggle('lock', !open);
-    });
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+    <script src="script.js"></script>
 </body>
 </html>
