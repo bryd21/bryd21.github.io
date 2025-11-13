@@ -3,64 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Locations - Modu Tennis</title>
+    <title>Location - Modu Tennis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">MODU TENNIS</div>
+            <div class="logo">
+                <span class="logo-modu">MODU</span>
+                <span class="logo-tennis">TENNIS</span>
+            </div>
             <div class="hamburger" id="hamburger">
+                <span></span>
                 <span></span>
                 <span></span>
             </div>
             <ul class="nav-menu" id="navMenu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="locations.html">Locations</a></li>
+                <li><a href="locations.html" class="active">Locations</a></li>
+                <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Locations Hero -->
-    <section class="page-hero">
-        <h1>Our Location</h1>
+    <!-- Page Hero -->
+    <section class="page-hero location-hero">
+        <div class="page-hero-content">
+            <p class="hero-subtitle">Find Us</p>
+            <h1>Our Location</h1>
+            <p class="hero-description">Visit us at Tenafly Racquet Club</p>
+        </div>
     </section>
 
     <!-- Location Details -->
-    <section class="location-section">
+    <section class="location-details-section">
         <div class="container">
-            <div class="location-card">
-                <h2>Tenafly Racquet Club</h2>
-                <div class="location-details">
-                    <p><strong>Address:</strong> 195 County Rd, Tenafly, NJ 07670</p>
-                    <p><strong>Phone:</strong> (201) 569-1114</p>
-                    <p><strong>Facility:</strong> Indoor Tennis Courts</p>
-                </div>
-                <div class="map-container">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3016.8349647889434!2d-73.96249668459406!3d40.90856797930101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f3e5e5e5e5e5%3A0x5e5e5e5e5e5e5e5e!2s195%20County%20Rd%2C%20Tenafly%2C%20NJ%2007670!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" 
-                        width="100%" 
-                        height="450" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
+            <div class="location-intro">
+                <p class="section-subtitle">Where We Train</p>
+                <h2>World-Class Tennis Facility</h2>
+                <div class="section-divider"></div>
+                <p class="lead-text">Modu Tennis is proud to call Tenafly Racquet Club home. This premier facility provides the perfect environment for players to develop their skills year-round.</p>
             </div>
 
-            <div class="facility-info">
-                <h3>Facility Features</h3>
-                <ul>
-                    <li>Climate-controlled indoor courts</li>
-                    <li>Professional lighting system</li>
-                    <li>Premium court surface</li>
-                    <li>Viewing area for parents and guests</li>
-                    <li>Pro shop with equipment and apparel</li>
-                    <li>Comfortable locker rooms</li>
-                </ul>
+            <div class="location-content-grid">
+                <div class="location-info-card">
+                    <div class="info-icon">
+                        <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                    </div>
+                    <h3>Address</h3>
+                    <p>Tenafly Racquet Club<br>195 County Road<br>Tenafly, NJ 07670</p>
+                    <a href="https://maps.google.com/?q=195+County+Rd,+Tenafly,+NJ+07670" target="_blank" class="btn-link">Get Directions →</a>
+                </div>
+
+                <div class="location-info-card">
+                    <div class="info-icon">
+                        <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                        </svg>
+                    </div>
+                    <h3>Phone</h3>
+                    <p><a href="tel:2015691114">(201) 569-1114</a></p>
+                    <p class="small-text">Call us for inquiries and bookings</p>
+                </div>
+
+                <div class="location-info-card">
+                    <div class="info-icon">
+                        <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3>Email</h3>
+                    <p><a href="mailto:info@modutennis.com">info@modutennis.com</a></p>
+                    <p class="small-text">We'll respond within 24 hours</p>
+                </div>
+
+                <div class="location-info-card">
+                    <div class="info-icon">
+                        <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3>Hours</h3>
+                    <p>Monday - Friday: 6 AM - 10 PM<br>Saturday - Sunday: 7 AM - 8 PM</p>
+                    <p class="small-text">Flexible scheduling available</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="map-container-full">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3016.8349647889434!2d-73.96249668459406!3d40.90856797930101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f3e5e5e5e5e5%3A0x5e5e5e5e5e5e5e5e!2s195%20County%20Rd%2C%20Tenafly%2C%20NJ%2007670!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" 
+                width="100%" 
+                height="500" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Facility Features -->
+    <section class="facility-features">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Facility Highlights</p>
+                <h2>Premium Training Environment</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">🎾</div>
+                    <h3>Indoor Courts</h3>
+                    <p>Climate-controlled indoor tennis courts allowing year-round training regardless of weather conditions.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">💡</div>
+                    <h3>Professional Lighting</h3>
+                    <p>State-of-the-art LED lighting system ensures optimal visibility for evening training sessions.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Premium Surface</h3>
+                    <p>High-quality court surface engineered for consistent ball bounce and player comfort.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">👥</div>
+                    <h3>Viewing Area</h3>
+                    <p>Comfortable seating area for parents and guests to watch training sessions and matches.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">🛍️</div>
+                    <h3>Pro Shop</h3>
+                    <p>Fully stocked pro shop with rackets, strings, apparel, and accessories from top brands.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">🚿</div>
+                    <h3>Locker Rooms</h3>
+                    <p>Clean, modern locker rooms with showers and amenities for player convenience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Visit?</h2>
+                <p>Schedule a tour of our facility and meet with Coach Steven Park to discuss your tennis goals</p>
+                <a href="mailto:info@modutennis.com" class="btn-primary large">Schedule a Visit</a>
             </div>
         </div>
     </section>
@@ -70,25 +179,74 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>MODU TENNIS</h3>
-                    <p>Premier tennis training program in New Jersey</p>
+                    <div class="footer-logo">
+                        <span class="logo-modu">MODU</span>
+                        <span class="logo-tennis">TENNIS</span>
+                    </div>
+                    <p class="footer-tagline">Excellence through dedication</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
+
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="locations.html">Locations</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="locations.html">Location</a></li>
                     </ul>
                 </div>
+
                 <div class="footer-section">
-                    <h4>Contact</h4>
-                    <p>Tenafly Racquet Club</p>
-                    <p>195 County Rd, Tenafly, NJ 07670</p>
+                    <h4>Programs</h4>
+                    <ul>
+                        <li><a href="index.html#programs">Junior Development</a></li>
+                        <li><a href="index.html#programs">Adult Excellence</a></li>
+                        <li><a href="index.html#programs">Private Coaching</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <ul class="contact-info">
+                        <li>
+                            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                            </svg>
+                            195 County Rd<br>Tenafly, NJ 07670
+                        </li>
+                        <li>
+                            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                            info@modutennis.com
+                        </li>
+                        <li>
+                            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+                            </svg>
+                            (201) 569-1114
+                        </li>
+                    </ul>
                 </div>
             </div>
+
             <div class="footer-bottom">
-                <p>&copy; 2025 Modu Tennis. All rights reserved.</p>
+                <p>&copy; 2024 Modu Tennis. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
             </div>
         </div>
     </footer>
