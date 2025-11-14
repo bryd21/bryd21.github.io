@@ -69,7 +69,7 @@
 <section class="hero">
 	<div class="hero__background">
 		<img
-			src="/1517761022800.jpeg"
+			src="/front.jpeg"
 			alt="Tennis training session"
 			loading="eager"
 			decoding="async"
