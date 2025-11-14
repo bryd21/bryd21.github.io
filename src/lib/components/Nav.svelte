@@ -53,7 +53,7 @@
 			<a href="/" aria-current={$page.url.pathname === '/' ? 'page' : undefined}>Home</a>
 			<a href="/about" aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>About</a>
 			<a href="/location" aria-current={$page.url.pathname === '/location' ? 'page' : undefined}>Location</a>
-			<a href="/#contact" class="btn btn--ghost">Contact</a>
+			<a href="/#contact">Contact</a>
 		</nav>
 	</div>
 </header>

@@ -66,31 +66,33 @@
 	<meta name="description" content="ModuTennis — modular tennis training, drills, and progress tracking." />
 </svelte:head>
 
-<section class="hero section">
-	<div class="container hero__grid">
-		<div class="hero__text reveal">
+<section class="hero">
+	<div class="hero__background">
+		<img
+			src="/1517761022800.jpeg"
+			alt="Tennis training session"
+			loading="eager"
+			decoding="async"
+		/>
+	</div>
+	<div class="container">
+		<div class="hero__content reveal">
 			<h1>Train smarter with ModuTennis</h1>
-			<p>Modular plans, drills, and progress tracking—built for players and coaches.</p>
+			<p>Modular plans, drills, and progress tracking—built for players and coaches who demand excellence.</p>
 			<div class="cta">
-				<a href="/about" class="btn"><span>Meet the founder</span></a>
-				<a href="/location" class="btn btn--ghost"><span>Visit us</span></a>
+				<a href="/about" class="btn btn--white"><span>Meet the founder</span></a>
+				<a href="/location" class="btn btn--ghost-light"><span>Visit us</span></a>
 			</div>
-		</div>
-		<div class="reveal">
-			<img
-				src="/1517761022800.jpeg"
-				alt="Tennis training session"
-				class="hero__image"
-				loading="eager"
-				decoding="async"
-			/>
 		</div>
 	</div>
 </section>
 
 <section class="section">
 	<div class="container">
-		<h2 class="reveal">What you get</h2>
+		<div class="section-header">
+			<h2 class="reveal">What you get</h2>
+			<p class="muted reveal">Professional training solutions designed for serious players and dedicated coaches.</p>
+		</div>
 		<div class="grid-3">
 			<article class="card reveal">
 				<h3>Modular plans</h3>
@@ -110,8 +112,10 @@
 
 <section id="contact" class="section alt">
 	<div class="container">
-		<h2 class="reveal">Contact</h2>
-		<form on:submit={handleSubmit} class="form reveal" method="POST">
+		<div class="section-header">
+			<h2 class="reveal">Contact</h2>
+		</div>
+		<form on:submit={handleSubmit} class="form reveal" method="POST" style="margin-inline:auto;">
 			<input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
 			<input type="hidden" name="subject" value="New Contact from ModuTennis" />
 			<input type="checkbox" name="botcheck" class="hidden" style="display: none;" />
