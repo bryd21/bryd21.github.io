@@ -94,14 +94,13 @@ input:focus, textarea:focus{outline:2px solid color-mix(in srgb, var(--brand) 55
 .portrait{
   display:block;
   width:100%;
-  aspect-ratio:4/3;        /* adjust to 1/1 for square, 3/4 for taller */
-  object-fit:cover;        /* crops to fill the box */
-  object-position:center;  /* center the crop */
+  aspect-ratio:4/3;
+  object-fit:cover;
+  object-position:center;
   border-radius:var(--radius);
   box-shadow:var(--shadow);
   background:none;
 }
-
 
 /* Map */
 .map-wrap{border-radius:var(--radius); overflow:hidden; border:1px solid color-mix(in srgb, var(--text) 12%, transparent); box-shadow:var(--shadow)}
@@ -115,5 +114,6 @@ input:focus, textarea:focus{outline:2px solid color-mix(in srgb, var(--brand) 55
   .reveal{opacity:1; transform:none; transition:none}
 }
 
-/* Anchor offsets: sections won’t hide under the header */
+/* Anchor offsets: sections won't hide under the header */
 section, .section{scroll-margin-top:calc(var(--header-h) + 12px)}
+
