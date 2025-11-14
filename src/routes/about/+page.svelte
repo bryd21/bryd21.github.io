@@ -42,12 +42,12 @@
 				can stack into powerful routines.
 			</p>
 			<p>
-				Steven's approach blends fundamentals with modern feedback loops—clear goals, quick metrics, and steady
+				Steve's approach blends fundamentals with modern feedback loops—clear goals, quick metrics, and steady
 				iteration. Whether you're new to the sport or tuning high‑level details, the goal is the same: train
 				smarter, enjoy more, and keep improving.
 			</p>
 			<p>
-				When he's not on court, Steven refines drills, mentors juniors, and collaborates with coaches to keep
+				When he's not on court, Steve refines drills, mentors juniors, and collaborates with coaches to keep
 				the program evolving.
 			</p>
 		</div>
