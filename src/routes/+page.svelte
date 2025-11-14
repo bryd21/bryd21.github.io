@@ -1,48 +1,5 @@
 <script>
 	import { onMount } from 'svelte';
-	import { goto } from '$app/navigation';
-
-	let formResult = { show: false, message: '', type: 'success' };
-	let submitting = false;
-
-	async function handleSubmit(e) {
-		e.preventDefault();
-		submitting = true;
-		formResult.show = false;
-
-		const formData = new FormData(e.target);
-		const submitBtn = e.target.querySelector('button[type="submit"]');
-		const originalBtnText = submitBtn.textContent;
-
-		try {
-			const response = await fetch('https://api.web3forms.com/submit', {
-				method: 'POST',
-				body: formData
-			});
-
-			const data = await response.json();
-
-			if (data.success) {
-				formResult = {
-					show: true,
-					message: 'Thanks! Your message has been sent successfully.',
-					type: 'success'
-				};
-				e.target.reset();
-			} else {
-				throw new Error(data.message || 'Something went wrong');
-			}
-		} catch (error) {
-			formResult = {
-				show: true,
-				message: `Error: ${error.message}. Please try again.`,
-				type: 'error'
-			};
-		} finally {
-			submitting = false;
-			submitBtn.textContent = originalBtnText;
-		}
-	}
 
 	// Reveal-on-scroll animations
 	onMount(() => {
@@ -113,39 +70,17 @@
 <section id="contact" class="section alt">
 	<div class="container">
 		<div class="section-header">
-			<h2 class="reveal">Contact</h2>
+			<h2 class="reveal">Get in touch</h2>
+			<p class="reveal">Ready to elevate your game? We'd love to hear from you.</p>
 		</div>
-		<form on:submit={handleSubmit} class="form reveal" method="POST" style="margin-inline:auto;">
-			<input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
-			<input type="hidden" name="subject" value="New Contact from ModuTennis" />
-			<input type="checkbox" name="botcheck" class="hidden" style="display: none;" />
-
-			<label>
-				Name
-				<input name="name" autocomplete="name" required />
-			</label>
-			<label>
-				Email
-				<input type="email" name="email" autocomplete="email" required />
-			</label>
-			<label>
-				Message
-				<textarea name="message" rows="4" required></textarea>
-			</label>
-			<button class="btn" type="submit" disabled={submitting}>
-				<span>{submitting ? 'Sending...' : 'Send'}</span>
-			</button>
-		</form>
-		{#if formResult.show}
-			<div
-				id="form-result"
-				class="form-result"
-				class:success={formResult.type === 'success'}
-				class:error={formResult.type === 'error'}
-			>
-				{formResult.message}
-			</div>
-		{/if}
+		<div class="contact-card reveal">
+			<a href="mailto:contact@modutennis.me" class="email-link">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M3 8L10.89 13.26C11.2187 13.4793 11.6049 13.5963 12 13.5963C12.3951 13.5963 12.7813 13.4793 13.11 13.26L21 8M5 19H19C19.5304 19 20.0391 18.7893 20.4142 18.4142C20.7893 18.0391 21 17.5304 21 17V7C21 6.46957 20.7893 5.96086 20.4142 5.58579C20.0391 5.21071 19.5304 5 19 5H5C4.46957 5 3.96086 5.21071 3.58579 5.58579C3.21071 5.96086 3 6.46957 3 7V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+				</svg>
+				<span>contact@modutennis.me</span>
+			</a>
+		</div>
 	</div>
 </section>
 
