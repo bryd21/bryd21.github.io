@@ -94,15 +94,15 @@
 			<p class="muted reveal">Professional training solutions designed for serious players and dedicated coaches.</p>
 		</div>
 		<div class="grid-3">
-			<article class="card reveal">
+			<article class="card card-green reveal">
 				<h3>Modular plans</h3>
 				<p>Short, stackable sessions that fit busy schedules and build consistency.</p>
 			</article>
-			<article class="card reveal" style="transition-delay:.06s">
+			<article class="card card-blue reveal" style="transition-delay:.06s">
 				<h3>Clear feedback</h3>
 				<p>Track reps, pace, and accuracy with simple inputs and clean charts.</p>
 			</article>
-			<article class="card reveal" style="transition-delay:.12s">
+			<article class="card card-purple reveal" style="transition-delay:.12s">
 				<h3>Coach tools</h3>
 				<p>Share drills, annotate sessions, and review progress week to week.</p>
 			</article>
