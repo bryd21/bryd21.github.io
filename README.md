@@ -28,19 +28,34 @@ npm run build
 npm run preview
 ```
 
-## Deployment to Cloudflare Workers
+## Deployment to Cloudflare Pages
 
-This project is configured for Cloudflare Workers using `@sveltejs/adapter-cloudflare`.
+This project is configured for Cloudflare Pages using `@sveltejs/adapter-cloudflare`.
 
-### Deploy using Wrangler
+### Option 1: Cloudflare Pages Dashboard (Recommended)
 
+1. Go to [Cloudflare Dashboard](https://dash.cloudflare.com) → Pages
+2. Click "Create a project" → "Connect to Git"
+3. Connect your GitHub/GitLab repository
+4. Configure build settings:
+   - **Build command:** `npm run build`
+   - **Build output directory:** `.svelte-kit/cloudflare`
+   - **Root directory:** `/` (leave as default)
+   - **Node version:** 18 or higher
+5. Click "Save and Deploy"
+
+Cloudflare Pages will automatically detect SvelteKit and handle deployments on every push to your main branch.
+
+### Option 2: Wrangler CLI
 
 ```bash
 npm run build
 npx wrangler pages deploy .svelte-kit/cloudflare
 ```
 
-Or use Cloudflare Pages for automatic deployments from Git.
+### Environment Variables (if needed)
+
+If you need environment variables, add them in the Cloudflare Pages dashboard under Settings → Environment Variables.
 
 ## Project Structure
 

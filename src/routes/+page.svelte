@@ -72,12 +72,18 @@
 			<h1>Train smarter with ModuTennis</h1>
 			<p>Modular plans, drills, and progress tracking—built for players and coaches.</p>
 			<div class="cta">
-				<a href="/about" class="btn">Meet the founder</a>
-				<a href="/location" class="btn btn--ghost">Visit us</a>
+				<a href="/about" class="btn"><span>Meet the founder</span></a>
+				<a href="/location" class="btn btn--ghost"><span>Visit us</span></a>
 			</div>
 		</div>
 		<div class="reveal">
-			<div class="hero__placeholder" aria-hidden="true"></div>
+			<img
+				src="/1517761022800.jpeg"
+				alt="Tennis training session"
+				class="hero__image"
+				loading="eager"
+				decoding="async"
+			/>
 		</div>
 	</div>
 </section>
@@ -123,13 +129,15 @@
 				<textarea name="message" rows="4" required></textarea>
 			</label>
 			<button class="btn" type="submit" disabled={submitting}>
-				{submitting ? 'Sending...' : 'Send'}
+				<span>{submitting ? 'Sending...' : 'Send'}</span>
 			</button>
 		</form>
 		{#if formResult.show}
 			<div
 				id="form-result"
-				style="margin-top: 1rem; padding: 1rem; border-radius: 4px; background-color: {formResult.type === 'success' ? '#d4edda' : '#f8d7da'}; color: {formResult.type === 'success' ? '#155724' : '#721c24'}; border: 1px solid {formResult.type === 'success' ? '#c3e6cb' : '#f5c6cb'};"
+				class="form-result"
+				class:success={formResult.type === 'success'}
+				class:error={formResult.type === 'error'}
 			>
 				{formResult.message}
 			</div>
