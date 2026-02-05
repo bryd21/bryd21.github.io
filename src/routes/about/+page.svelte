@@ -1,7 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
 
-	// Reveal-on-scroll animations
 	onMount(() => {
 		const observer = new IntersectionObserver(
 			(entries, obs) => {
@@ -19,12 +18,17 @@
 </script>
 
 <svelte:head>
-	<title>About • ModuTennis</title>
+	<title>About — ModuTennis</title>
 	<meta name="description" content="About Steven Park, founder of ModuTennis." />
 </svelte:head>
 
 <div class="section container">
-	<h1 class="reveal">About the founder, Steven Park</h1>
+	<div class="reveal">
+		<span class="section-label">About</span>
+		<h1>Steven Park</h1>
+		<hr class="divider" />
+	</div>
+
 	<div class="about-grid">
 		<div class="reveal">
 			<img
@@ -35,15 +39,15 @@
 				decoding="async"
 			/>
 		</div>
-		<div class="reveal" style="transition-delay:.06s">
+		<div class="reveal" style="transition-delay:.08s">
 			<p>
 				Steven Park founded ModuTennis to make purposeful training simple and accessible. Drawing on years of
 				coaching and competing, he focuses on building consistency through short, modular sessions that players
 				can stack into powerful routines.
 			</p>
 			<p>
-				Steve's approach blends fundamentals with modern feedback loops—clear goals, quick metrics, and steady
-				iteration. Whether you're new to the sport or tuning high‑level details, the goal is the same: train
+				Steve's approach blends fundamentals with modern feedback loops — clear goals, quick metrics, and steady
+				iteration. Whether you're new to the sport or tuning high&#8209;level details, the goal is the same: train
 				smarter, enjoy more, and keep improving.
 			</p>
 			<p>
@@ -53,4 +57,3 @@
 		</div>
 	</div>
 </div>
-
